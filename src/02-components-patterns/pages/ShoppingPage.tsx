@@ -1,5 +1,5 @@
-import { ProductCard } from "../components"
-
+import { ProductButtons, ProductCard, ProductImage, ProductTitle } from "../components"
+import '../styles/custom-styles.css'
 
 const product = {
   id: '1',
@@ -21,6 +21,20 @@ export const ShoppingPage = () => {
         justifyContent: 'space-evenly',
       }}>
         <ProductCard product={ product }>
+          <ProductImage />
+          <ProductTitle />
+          <ProductButtons />
+        </ProductCard>
+
+        <ProductCard className='bg-dark' product={ product }>
+          <ProductCard.Image />
+          <ProductCard.Title />
+          <ProductCard.Buttons />
+        </ProductCard>
+
+        <ProductCard product={ product } styles={{
+          backgroundColor: '#544569'
+        }}>
           <ProductCard.Image />
           <ProductCard.Title />
           <ProductCard.Buttons />
