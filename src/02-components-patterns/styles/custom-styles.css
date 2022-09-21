@@ -1,3 +1,29 @@
 .bg-dark {
   background-color: rgb(56, 56, 56);
 }
+
+.shopping-cart {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.algo:last-child {
+  right: 10px;
+  cursor: pointer;
+
+}
+
+.algo {
+  background-color: '#544569';
+  width: 100px;
+  position: absolute;
+  right: 20px;
+  box-shadow: -5px 0 10px 0px #333;
+  transition: all 1s;
+}
+
+.algo:last-child:hover {
+  /* background-color: red; */
+  right: -50px;
+}
